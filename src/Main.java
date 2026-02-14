@@ -21,14 +21,14 @@ public class Main {
         students[2] = new Aspirant("Евгений", "Евгеньев", "22", 3.7, "Работа по органической химии");
         students[3] = new Aspirant("Антон", "Антонов", "40", 5, "Статья в журнал");
 
-        System.out.println(students[0].getScholarship());
-        System.out.println(students[1].getScholarship());
-        System.out.println(students[2].getScholarship());
-        System.out.println(students[3].getScholarship());
+        for (Student student : students) {
+            System.out.println(student.getScholarship());
+        }
     }
 
     static void doShapesLogic() {
         Shape[] shapes = new Shape[4];
+
         shapes[0] = new Rectangle(new Vector2(12, 10), new Vector2(15, 15), "#b6a89a");
         shapes[1] = new Circle(new Vector2(59, 59), 5, "#cfb53b");
         shapes[2] = new Rectangle(new Vector2(88, 80), new Vector2(90, 83), "#e6e6fa");
