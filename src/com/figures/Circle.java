@@ -7,10 +7,11 @@ public class Circle extends Shape {
     public Circle(Vector2 center, int radius, String hexColor) {
         super(hexColor);
         this.center = center;
+        this.radius = radius;
     }
 
     @Override
     public void draw() {
-        System.out.println("Нарисован круг радиусом " + radius + "вокруг точки: \n {" + center.getX() + "; " + center.getY() + "}");
+        System.out.println("Нарисован круг радиусом " + radius + " вокруг точки: \n {" + center.getX() + "; " + center.getY() + "}");
     }
 }
