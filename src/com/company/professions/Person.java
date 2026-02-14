@@ -1,4 +1,4 @@
-package com.company.com.company.professions;
+package com.company.professions;
 
 public class Person {
     protected int age;

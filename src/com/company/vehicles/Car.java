@@ -1,6 +1,6 @@
 package com.company.vehicles;
 
-import com.company.com.company.professions.Driver;
+import com.company.professions.Driver;
 import com.company.details.Engine;
 
 public class Car {
@@ -28,16 +28,8 @@ public class Car {
 
     @Override
     public String toString() {
-        String info = "{" + brand + ", " + type + ", " + weight + ", " +
-                driver.getFullName() + ", " + driver.getExperience() + ", " +
-                engine.getPerformance() + ", " + engine.getPower();
-        if (this instanceof Lorry) {
-            info += ", " + ((Lorry) this).getLoadCapacity();
-        }
-        if (this instanceof SportCar) {
-            info += ", " + ((SportCar) this).getSpeedLimit();
-        }
-        info += "}";
-        return info;
+        return brand + ", " + type + ", " + weight + ", " +
+                driver.getFullName() + ", " + driver.getDrivingExperienceYears() + ", " +
+                engine.getVendor() + ", " + engine.getPower();
     }
 }
