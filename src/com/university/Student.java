@@ -14,6 +14,6 @@ public class Student {
     }
 
     public int getScholarship() {
-        return averageMark == 5 ? 5000 : 3000;
+        return this.averageMark == 5 ? 5000 : 3000;
     }
 }

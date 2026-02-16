@@ -28,8 +28,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return brand + ", " + type + ", " + weight + ", " +
-                driver.getFullName() + ", " + driver.getDrivingExperienceYears() + ", " +
-                engine.getVendor() + ", " + engine.getPower();
+        return this.brand + ", " + this.type + ", " + this.weight + ", " +
+                this.driver.getFullName() + ", " + this.driver.getDrivingExperienceYears() + ", " +
+                this.engine.getVendor() + ", " + this.engine.getPower();
     }
 }

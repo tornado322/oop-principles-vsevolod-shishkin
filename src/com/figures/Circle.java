@@ -12,6 +12,7 @@ public class Circle extends Shape {
 
     @Override
     public void draw() {
-        System.out.println("Нарисован круг радиусом " + radius + " вокруг точки: \n {" + center.getX() + "; " + center.getY() + "}");
+        System.out.println("Нарисован круг радиусом " + this.radius + " вокруг точки: \n" +
+                " {" + this.center.getX() + "; " + this.center.getY() + "}");
     }
 }

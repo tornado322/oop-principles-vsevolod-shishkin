@@ -13,9 +13,9 @@ public class Rectangle extends Shape {
     @Override
     public void draw() {
         System.out.println("Нарисован прямоугольник с точками: \n" +
-                "{" + topLeftPoint.getX() + ", " + topLeftPoint.getY() + "}\n" +
-                "{" + bottomRightPoint.getX() + ", " + topLeftPoint.getY() + "}\n" +
-                "{" + topLeftPoint.getX() + ", " + bottomRightPoint.getY() + "}\n" +
-                "{" + bottomRightPoint.getX() + ", " + bottomRightPoint.getY() + "}");
+                "{" + this.topLeftPoint.getX() + ", " + this.topLeftPoint.getY() + "}\n" +
+                "{" + this.bottomRightPoint.getX() + ", " + this.topLeftPoint.getY() + "}\n" +
+                "{" + this.topLeftPoint.getX() + ", " + this.bottomRightPoint.getY() + "}\n" +
+                "{" + this.bottomRightPoint.getX() + ", " + this.bottomRightPoint.getY() + "}");
     }
 }
